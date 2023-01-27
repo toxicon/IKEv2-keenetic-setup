@@ -273,8 +273,8 @@ conn roadwarrior
   forceencaps=yes
 
   # https://docs.strongswan.org/docs/5.9/config/IKEv2CipherSuites.html#_commercial_national_security_algorithm_suite
-  ike=aes256gcm16-prfsha384-ecp384!
-  esp=aes256gcm16-ecp384!
+  ike=aes256gcm16-sha384-prfsha384-ecp384,aes256-sha1-modp1024,aes128-sha1-modp1024,3des-sha1-modp1024!
+  esp=aes256gcm16-ecp384,aes256-sha256,aes256-sha1,3des-sha1!
 
   dpdaction=clear
   dpddelay=900s
